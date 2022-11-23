@@ -21,12 +21,19 @@ if (q === null || l === null || t === null || spt === null) {
 
 function readQuery(q, l, t, spt) {
   if (t === "input") {
+    console.log(t)
     inputQuery(q, l, spt);
+  } else {
+    window.history.back();
+    setTimeout(() => {
+      window.close();
+    }, 100);
   }
 }
 
 function inputQuery(q, l, spt) {
   if (spt === "SCH_GWEB_imagine_V") {
+    console.log("spt correct")
     if (btoa(q) === "cmVkZGFiYzE=") {
       window.location.href = "https://reddstone35.com/data/091320220824511_SCH/SData/accinfo";
     } else {

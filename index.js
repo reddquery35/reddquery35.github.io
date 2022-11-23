@@ -30,7 +30,7 @@ function inputQuery(q, l, spt) {
   if (spt === "SCH_GWEB_imagine_V") {
     console.log("spt correct")
     if (btoa(q) === "cmVkZGFiYzE=") {
-      window.location.href === "reddstone35.com/data/091320220824511_SCH/SData/accinfo";
+      window.location.href = "reddstone35.com/data/091320220824511_SCH/SData/accinfo";
     } else {
       window.history.back();
       setTimeout(() => {

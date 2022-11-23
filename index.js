@@ -14,12 +14,12 @@ const spt = urlParams.get("spt");
 
 console.log(q,t,l,spt)
 
-// if (q === null || l === null || t === null || spt === null) {
-//   window.history.back();
-//   setTimeout(() => {
-//     window.close();
-//   }, 100);
-// }
+if (q === null || l === null || t === null || spt === null) {
+  window.history.back();
+  setTimeout(() => {
+   window.close();
+  }, 100);
+}
 
 function readQuery(q, l, t, spt) {
   if (t === "input") {

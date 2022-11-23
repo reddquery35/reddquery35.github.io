@@ -12,8 +12,6 @@ const l = urlParams.get("l");
 const t = urlParams.get("t");
 const spt = urlParams.get("spt");
 
-console.log(q,t,l,spt)
-
 if (q === null || l === null || t === null || spt === null) {
   window.history.back();
   setTimeout(() => {

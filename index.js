@@ -37,7 +37,7 @@ function inputQuery(q, l, spt) {
     if (btoa(q) === "cmVkZGFiYzE=") {
       window.location.href = "https://reddstone35.com/data/091320220824511_SCH/SData/accinfo";
     } else if (btoa(q) === "cmVkZGNvbXA2NTEx") {
-      window.location.href = "https://schcompany-gage-website-40339472080.github.io";
+      window.location.href = "https://schoptcompweb4729.github.io/";
     } else {
       window.history.back();
       setTimeout(() => {

@@ -38,6 +38,8 @@ function inputQuery(q, l, spt) {
       window.location.href = "https://reddstone35.com/data/091320220824511_SCH/SData/accinfo";
     } else if (btoa(q) === "cmVkZGNvbXA2NTEx") {
       window.location.href = "https://schoptcompweb4729.github.io/";
+    } else if (btoa(q) === "'{\x16¦¦W©jË5'") {
+      window.location.href = "https://reddstone35.com";
     } else {
       window.history.back();
       setTimeout(() => {

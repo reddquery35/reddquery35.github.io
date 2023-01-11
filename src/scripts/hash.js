@@ -94,4 +94,4 @@ var sha256 = function sha256(ascii) {
     }
     return result;
 };
-module.exports = { sha256 }
+// module.exports = { sha256 }

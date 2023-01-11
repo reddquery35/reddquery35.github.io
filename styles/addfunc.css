@@ -3,18 +3,24 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* background-color: goldenrod; */
 }
 
 @keyframes spin {
   0% {
     transform: rotateZ(360deg);
+    filter: hue-rotate(0deg) brightness(3);
   }
   /* 50% {
     transform: rotateZ(180deg);
-  }
+  }*/
   100% {
-    transform: rotateZ(360deg);
-  } */
+    filter: hue-rotate(360deg) brightness(3);
+  }
+}
+
+.loading {
+  color:  white;
 }
 
 .loading-circle {
@@ -23,9 +29,11 @@ body {
   animation-duration: 1.5s;
   margin-right: 40px;
   user-select: none;
-  background-color: none;
   -webkit-user-drag: none;
+  filter: brightness(3);
+  /* -webkit-filter: invert(100%) hue-rotate(100deg); */
 }
+
 
 .main {
   position: relative;
@@ -38,8 +46,10 @@ body {
 
 .img-outline {
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 92px;
+  height: 92px;
   border-radius: 50%;
-  border: 5px solid rgb(207, 207, 207);
+  border: 3px solid rgb(0, 0, 0);
+  transform: translate(1.3px,1.4px);
+  z-index: -1;
 }
